@@ -54,6 +54,12 @@ kubectl config --kubeconfig=config-demo set-context dev-storage --cluster=develo
 kubectl config --kubeconfig=config-demo set-context exp-scratch --cluster=scratch --namespace=default --user=experimenter
 ```
 
+```
+kubectl --kubeconfig=config-demo config unset users.<name>
+kubectl --kubeconfig=config-demo config unset clusters.<name>
+kubectl --kubeconfig=config-demo config unset contexts.<name>
+```
+
 ## Commands
 
 ```
