@@ -102,7 +102,31 @@ kubectl explain node.spec
 
 kubectl apply -f file_name.yaml
 
+docker exec -it <worker_node> bash
 
+docker exec -it <worker_node> sh
+
+kubectl port-forward <pod_name> 8080
+
+kubectl logs <pod_name> –-timestamps=true
+
+kubectl logs <pod_name> --since=2m
+
+kubectl logs <pod_name> –-since-time=2020-02-01T09:50:00Z
+
+kubectl logs <pod_name> –-tail=10
+
+kubectl logs <pod_name> –-tail 10
+
+kubectl cp <pod_name>:/etc/hosts /tmp/<name_file>
+
+kubectl exec <pod_name> -- ps aux
+
+kubectl exec <pod_name> -- curl -s localhost:8080
+
+kubectl exec -it <pod_name> -- bash
+
+kubectl attach <pod_name>
 ```
 
 
