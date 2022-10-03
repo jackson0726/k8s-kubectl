@@ -60,6 +60,12 @@ kubectl --kubeconfig=config-demo config unset clusters.<name>
 kubectl --kubeconfig=config-demo config unset contexts.<name>
 ```
 
+## Clean up
+
+```
+export KUBECONFIG="$KUBECONFIG_SAVED"
+```
+
 ## Commands
 
 ```
@@ -83,13 +89,16 @@ kubectl expose deployment <name> --type=LoadBalancer --port 8080
 
 kubetl get svc
 
-kubectl describe
-```
+kubectl describe node <node_name>
 
-## Clean up
+kubectl get node <node-name> -o yaml
 
-```
-export KUBECONFIG="$KUBECONFIG_SAVED"
+kubectl proxy
+http://127.0.0.1:8001/api/v1/nodes/<node_name>
+
+kubectl explain nodes
+
+kubectl explain node.spec
 ```
 
 
