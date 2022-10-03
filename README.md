@@ -99,6 +99,10 @@ http://127.0.0.1:8001/api/v1/nodes/<node_name>
 kubectl explain nodes
 
 kubectl explain node.spec
+
+kubectl apply -f file_name.yaml
+
+
 ```
 
 
