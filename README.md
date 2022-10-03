@@ -68,6 +68,22 @@ export KUBECONFIG_SAVED="$KUBECONFIG"
 export KUBECONFIG="${KUBECONFIG}:config-demo:config-demo-2"
 
 export KUBECONFIG="${KUBECONFIG}:${HOME}/.kube/config"
+
+kubectl describe service
+
+kubectl get nodes
+
+kubectl get pods
+
+kubectl get deploy
+
+kubectl create deployment <name> --image=<image_name>:<version>
+
+kubectl expose deployment <name> --type=LoadBalancer --port 8080
+
+kubetl get svc
+
+kubectl describe
 ```
 
 ## Clean up
