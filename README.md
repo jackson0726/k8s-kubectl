@@ -127,6 +127,8 @@ kubectl exec <pod_name> -- curl -s localhost:8080
 kubectl exec -it <pod_name> -- bash
 
 kubectl attach <pod_name>
+
+kubectl logs -f pod_name  | grep -iE '0962029520|784090453'
 ```
 
 
