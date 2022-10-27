@@ -129,6 +129,8 @@ kubectl exec -it <pod_name> -- bash
 kubectl attach <pod_name>
 
 kubectl logs -f pod_name  | grep -iE '0962029520|784090453'
+
+kubectl exec pod_name -- mount --list | grep nginx/html
 ```
 
 
